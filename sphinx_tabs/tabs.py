@@ -225,7 +225,7 @@ def update_context(app, pagename, templatename, context, doctree):
                 if path.endswith('.css'):
                     context['css_files'].remove(path)
                     app.info(u'Removed CSS ({}) on {}'.format(path, pagename))
-                    app.info(u'- context["css_files"] = {}'.format(context['css_files'))
+                    app.info(u'- context["css_files"] = {}'.format(context['css_files']))
                     app.info(u'- app.builder.css_files = {}'.format(app.builder.css_files))
         if 'script_files' in context:
             context['script_files'] = context['script_files'][:]
